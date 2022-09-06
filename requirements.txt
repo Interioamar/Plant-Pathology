@@ -2,5 +2,5 @@ numpy>=1.9.2
 matplotlib>=1.4.3
 pandas>=0.19
 opencv-python-headless<4.3
-https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.0-cp27-none-linux_x86_64.whl
+tensorflow_cpu==2.9.2
 streamlit
