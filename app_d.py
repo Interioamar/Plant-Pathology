@@ -10,7 +10,6 @@ import pandas as pd
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-from tqdm.notebook import tqdm
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
