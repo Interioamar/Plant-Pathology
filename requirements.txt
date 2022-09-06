@@ -3,4 +3,4 @@ matplotlib>=1.4.3
 pandas>=0.19
 opencv-python-headless<4.0
 tensorflow_cpu>1.0.0
-streamlit==1.12.2
+streamlit

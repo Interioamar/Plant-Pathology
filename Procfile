@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run plant_pathology.py
+web: sh setup.sh && streamlit run app1.py
