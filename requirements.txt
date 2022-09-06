@@ -3,5 +3,5 @@ matplotlib>=1.4.3
 pandas>=0.19
 opencv-python-headless<4.3
 seaborn==0.11.2
-tensorflow==2.9.2
+tensorflow_cpu>1.14
 streamlit
