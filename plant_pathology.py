@@ -9,8 +9,11 @@ import numpy as np
 import pandas as pd
 import cv2
 import numpy as np
+import seaborn as sns
 import matplotlib.pyplot as plt
+from tqdm.notebook import tqdm
 import numpy as np
+from PIL import Image
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 
@@ -61,7 +64,7 @@ def main():
 
 def sample_data(data):
     st.subheader('Explore data with ground truth label')
-    n = st.number_input('Enter random number between 0 to 45',key='integer',step =1,min_value =0,max_value=45)
+    n = st.number_input('Enter random number between 0 to 2',key='integer',step =1,min_value =0,max_value=2)
     
     j=n  #input random number less than 91 since multiple disease records are 91
     target=['healthy','multiple_diseases', 'rust', 'scab']
@@ -75,7 +78,7 @@ def sample_data(data):
 
     for i,col in enumerate(st.columns(4)):
         col.image(list1[i], width=150,caption='%s'%target[i])
-             
+
     return list1
 
 #https://docs.streamlit.io/library/advanced-features/experimental-cache-primitives
@@ -93,7 +96,8 @@ def predict_func(image):
     pred1=pd.DataFrame(pred,columns=["healthy","multiple_diseases","rust","scab"])
     pred1.reset_index(drop=True, inplace=True)
 
-    st.image(image,caption="Input Image",width=200)
+    input_image=cv2.resize(image, (250, 200),interpolation = cv2.INTER_NEAREST)
+    st.image(input_image,caption="Input Image")
     st.write('Predicted probabilities for classes')
     st.dataframe(pred1)
     prediction=target[np.argmax(np.array(pred1))]
@@ -106,7 +110,7 @@ if __name__ == "__main__":
     input=st.text_input("Which image wanted to check from the dataset- Train or Test ",'Test',key='str',max_chars=5,help ='test',placeholder='test')
     input_text=st.write(input.strip().capitalize())
 
-    number = st.number_input('Enter_number',key='int',step =1,min_value =0,max_value=500)
+    number = st.number_input('Enter_number',key='int',step =1,min_value =0,max_value=24)
     st.write('Input image is :  %s_'%(input.strip().capitalize()), number)
 
     image=cv2.imread('images/{}_{}.jpg'.format(input.strip().capitalize(),number))
