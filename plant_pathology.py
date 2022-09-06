@@ -96,8 +96,7 @@ def predict_func(image):
     pred1=pd.DataFrame(pred,columns=["healthy","multiple_diseases","rust","scab"])
     pred1.reset_index(drop=True, inplace=True)
 
-    input_image=cv2.resize(image, (250, 200),interpolation = cv2.INTER_NEAREST)
-    st.image(input_image,caption="Input Image")
+    st.image(image,caption="Input Image",image_width=300)
     st.write('Predicted probabilities for classes')
     st.dataframe(pred1)
     prediction=target[np.argmax(np.array(pred1))]
