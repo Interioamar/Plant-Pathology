@@ -1,6 +1,7 @@
-numpy>=1.9.2
-matplotlib>=1.4.3
-pandas>=0.19
+matplotlib==3.5.3
+numpy==1.23.2
+opencv_python==4.6.0.66
+pandas==1.4.4
 opencv-python-headless<4.3
 tensorflow_cpu==2.9.2
-streamlit
+streamlit==1.12.2
