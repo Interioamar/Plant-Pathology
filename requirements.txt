@@ -1,7 +1,6 @@
-matplotlib==3.5.3
 numpy==1.23.2
 matplotlib>=1.4.3
 pandas>=0.19
-opencv-python-headless<4.3
-tensorflow_cpu==2.9.2
+opencv-python-headless<4.0
+tensorflow_cpu>1.0.0
 streamlit
