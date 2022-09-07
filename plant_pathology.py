@@ -19,7 +19,7 @@ from tensorflow.keras.models import load_model
 def main():
     
     my_value="Plant Pathology" 
-    st.markdown(f"<h1 style='text-align: center; color: black;'>{my_value}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='text-align: center;'>{my_value}</h1>", unsafe_allow_html=True)
     st.markdown(f'<p style="text-align:center; color:black; font-size: 15px;">Identifying the type of leaf disease</p>', unsafe_allow_html=True)
     
     st.markdown('##')
@@ -29,7 +29,7 @@ def main():
     st.sidebar.markdown('Go to [Github](https://github.com/Interioamar)',unsafe_allow_html=True)
 
     st.sidebar.text("Write your feedback to:")
-    st.sidebar.markdown('<p style="text-align:left; color:black; font-size: 15px;">aktamar1995@gmail.com</p>', unsafe_allow_html=True)
+    st.sidebar.markdown('<p style="text-align:left; font-size: 15px;">aktamar1995@gmail.com</p>', unsafe_allow_html=True)
 
     @st.cache
     def load_data_train(nrows):
@@ -115,9 +115,9 @@ if __name__ == "__main__":
     predict_func(image)
 
     st.write("##")
-    st.subheader("Upload image")
+    st.subheader("Upload an image")
 
-    uploaded_file = st.file_uploader("Choose a image file")
+    uploaded_file = st.file_uploader("Choose an image file")
     if uploaded_file is not None:
         file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
         opencv_image = cv2.imdecode(file_bytes, 1)
