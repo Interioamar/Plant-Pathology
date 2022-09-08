@@ -60,7 +60,7 @@ def main():
     return data_train,data_test
 
 def sample_data(data):
-    st.subheader('Explore data with ground truth label')
+    st.subheader('Explore the data with ground truth label')
     n = st.number_input('Enter 0 or 1',key='integer',step =1,min_value =0,max_value=1)
     
     j=n  #input random number less than 91 since multiple disease records are 91
@@ -95,7 +95,7 @@ def predict_func(image):
 
     input_image=cv2.resize(image, (250, 200),interpolation = cv2.INTER_NEAREST)
     st.image(input_image,caption="Input Image")
-    st.write('Predicted probabilities for classes')
+    st.write('Predicted probabilities')
     st.dataframe(pred1)
     prediction=target[np.argmax(np.array(pred1))]
     new_title = f'<p style="font-family:sans-serif; color:black; font-size: 20px;">Prediction :{prediction}</p>'
@@ -104,11 +104,11 @@ def predict_func(image):
 
 if __name__ == "__main__":
     data_train,data_test=main()
-    input=st.text_input("Which image wanted to check from the dataset- Train or Test ",'Test',key='str',max_chars=5,help ='test',placeholder='test')
+    input=st.text_input("Choose the leaf image from data - Train or Test ",'Test',key='str',max_chars=5,help ='test',placeholder='test')
     input_text=st.write(input.strip().capitalize())
 
-    number = st.number_input('Enter_number',key='int',step =1,min_value =0,max_value=12)
-    st.write('Input image is :  %s_'%(input.strip().capitalize()), number)
+    number = st.number_input('Enter a number',key='int',step =1,min_value =0,max_value=12)
+    st.write('Input image :  %s_'%(input.strip().capitalize()), number)
 
     image=cv2.imread('images/{}_{}.jpg'.format(input.strip().capitalize(),number))
     image=cv2.resize(image, (512, 512),interpolation = cv2.INTER_NEAREST)
