@@ -1,9 +1,7 @@
 **Plant Pathology (** Identify the category of foliar diseases in apple
 trees **)**
 
-![A guide to Apple Tree Pests and
-Diseases.](./media/image1.jpeg){width="5.3953488626421695in"
-height="4.0453127734033245in"}
+![apple-tree-day-1](https://user-images.githubusercontent.com/107593984/189393578-b4b88aab-6bc4-4be1-bc38-c36d5224659b.jpeg)
 
 Source:
 <https://www.agrifarming.in/apple-tree-pests-and-diseases-control-management>
