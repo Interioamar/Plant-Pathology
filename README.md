@@ -75,21 +75,19 @@ General information about the dataset:
 
 2.  Target columns : Healthy, Multiple diseases, Rust, Scab
 
-Dataset is having both train.csv & test.csv files
-train.csv is having total 5 columns i.e. image_id and 4 categories of
-target columns labelled in binary format.
-Total number of datapoints in train.csv file are : 1821
-Total number of datapoints in test.csv file are : 1821
-Image_id: the unique key for datapoints
+* Dataset is having both train.csv & test.csv files
+* train.csv is having total 5 columns i.e. image_id and 4 categories of target columns labelled in binary format.
+* Total number of datapoints in train.csv file are : 1821
+* Total number of datapoints in test.csv file are : 1821
+* Image_id: the unique key for datapoints
 
 **Train dataset classification overview **
 ![image2](https://user-images.githubusercontent.com/107593984/189395205-a76f587e-2580-4081-8bb2-cbadbb4f9410.png)
 
 
-This is a Multiclass Classification problem. The metric for evaluation
-in Kaggle is **ROC AUC of each predicted column.**
-Other Metrics: Confusion Matrix,F1 score can be used as the dataset is
-not balanced.
+    This is a Multiclass Classification problem. The metric for evaluation in Kaggle is **ROC AUC of each predicted column.**
+    Other Metrics: Confusion Matrix,F1 score can be used as the dataset is
+    not balanced.
 
 **TLDR:**
 
