@@ -42,18 +42,15 @@ organism.
 **Problem Statement:**
 
 1.  Categorization of different diseases based on leaf image.
-
-So here we need to classify a given image from apple leaf dataset into
-different disease and healthy leaf category. Also need to distinguish
-between multiple diseases in a single leaf.
+    So here we need to classify a given image from apple leaf dataset into
+    different disease and healthy leaf category. Also need to distinguish
+    between multiple diseases in a single leaf.
 
 2.  Currently this problem has a DL solution solved using off-the-shelf
     convolutional neural network (CNN). And there are great variance in
     symptoms due to age of infected tissues, genetic variations, and
     light conditions within trees decreases the accuracy of detection.
-
-> So here we need to improve the accuracy of model for better
-> classificatrion of foliar disease.
+    So here we need to improve the accuracy of model for better classificatrion of foliar disease.
 
 **Business Constraints**
 
@@ -81,27 +78,21 @@ General information about the dataset:
 
 2.  Target columns : Healthy, Multiple diseases, Rust, Scab
 
-> Dataset is having both train.csv & test.csv files
->
-> train.csv is having total 5 columns i.e. image_id and 4 categories of
-> target columns labelled in binary format.
->
-> Total number of datapoints in train.csv file are : 1821
->
-> Total number of datapoints in test.csv file are : 1821
->
-> Image_id: the unique key for datapoints
->
-> Train dataset classification overview
->
-> ![](./media/image2.png){width="6.488194444444445in"
-> height="1.0694444444444444in"}
->
-> This is a Multiclass Classification problem. The metric for evaluation
-> in Kaggle is **ROC AUC of each predicted column.**
->
-> Other Metrics: Confusion Matrix,F1 score can be used as the dataset is
-> not balanced.
+Dataset is having both train.csv & test.csv files
+train.csv is having total 5 columns i.e. image_id and 4 categories of
+target columns labelled in binary format.
+Total number of datapoints in train.csv file are : 1821
+Total number of datapoints in test.csv file are : 1821
+Image_id: the unique key for datapoints
+Train dataset classification overview
+
+![](./media/image2.png){width="6.488194444444445in"
+height="1.0694444444444444in"}
+
+This is a Multiclass Classification problem. The metric for evaluation
+in Kaggle is **ROC AUC of each predicted column.**
+Other Metrics: Confusion Matrix,F1 score can be used as the dataset is
+not balanced.
 
 **TLDR:**
 
