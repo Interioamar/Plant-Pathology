@@ -89,13 +89,14 @@ General information about the dataset:
  Other Metrics: Confusion Matrix,F1 score can be used as the dataset is
  not balanced.
 
+#### **Access Deployed DL model **
+https://plant-pathology.herokuapp.com/
+
 **TLDR:**
 
 ![TLDR](https://user-images.githubusercontent.com/107593984/189395043-5d96b04c-9bf1-4028-bb60-4179c04ae7f5.jpg)
 
 Source: <https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/aps3.11390>
 
-#### **Deployed model in heroku (** Identify the category of foliar diseases in apple trees **)**
-https://plant-pathology.herokuapp.com/
 
 
