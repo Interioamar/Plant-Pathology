@@ -1,4 +1,4 @@
-### **Plant Pathology (** Identify the category of foliar diseases in apple trees **)**
+## **Plant Pathology (** Identify the category of foliar diseases in apple trees **)**
 
 ![apple_tree_image](https://user-images.githubusercontent.com/107593984/189394666-6402deb5-4ce1-4a61-be0f-793a617eb422.jpg)
 
