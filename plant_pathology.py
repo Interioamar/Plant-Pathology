@@ -125,5 +125,5 @@ if __name__ == "__main__":
         predict_func(image1)
 
     st.write("##")
-
+ 
     sample_data(data_train)
