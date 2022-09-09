@@ -89,7 +89,7 @@ General information about the dataset:
  Other Metrics: Confusion Matrix,F1 score can be used as the dataset is
  not balanced.
 
-#### **Access Deployed DL model **
+#### Go to Deployed DL model
 https://plant-pathology.herokuapp.com/
 
 **TLDR:**
