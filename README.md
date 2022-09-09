@@ -81,10 +81,10 @@ target columns labelled in binary format.
 Total number of datapoints in train.csv file are : 1821
 Total number of datapoints in test.csv file are : 1821
 Image_id: the unique key for datapoints
-Train dataset classification overview
 
-![](./media/image2.png){width="6.488194444444445in"
-height="1.0694444444444444in"}
+**Train dataset classification overview **
+![image2](https://user-images.githubusercontent.com/107593984/189395205-a76f587e-2580-4081-8bb2-cbadbb4f9410.png)
+
 
 This is a Multiclass Classification problem. The metric for evaluation
 in Kaggle is **ROC AUC of each predicted column.**
@@ -93,7 +93,6 @@ not balanced.
 
 **TLDR:**
 
-![C:\\Users\\amar123\\Desktop\\Applied_AI\\Assignments\\Self_Case_Study_2\\Blog\\Capture.JPG](./media/image3.jpeg){width="5.162209098862642in"
-height="3.9170778652668417in"}
+![TLDR](https://user-images.githubusercontent.com/107593984/189395043-5d96b04c-9bf1-4028-bb60-4179c04ae7f5.jpg)
 
 Source: <https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/aps3.11390>
