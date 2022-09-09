@@ -64,7 +64,6 @@ organism.
 
 -   This dataset has 3642 images and has labeled data for train images
     and is a Supervised learning(labelled) dataset
-
 -   Given a photo of an apple leaf,we have to distinguish between leaves
     which are healthy, those which are infected with apple rust, those
     that have apple scab, and those with more than one disease.
@@ -89,8 +88,9 @@ General information about the dataset:
  Other Metrics: Confusion Matrix,F1 score can be used as the dataset is
  not balanced.
 
-#### Go to Deployed DL model
+### Go to Deployed DL model
 https://plant-pathology.herokuapp.com/
+
 
 **TLDR:**
 
