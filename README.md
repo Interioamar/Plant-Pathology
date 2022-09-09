@@ -1,5 +1,5 @@
 ## **Plant Pathology (** Identify the category of foliar diseases in apple trees **)** 
-Go to productionized model at:  https://plant-pathology.herokuapp.com/                   
+Check out productionized model at:  https://plant-pathology.herokuapp.com/                   
 
 ![apple_tree_image](https://user-images.githubusercontent.com/107593984/189394666-6402deb5-4ce1-4a61-be0f-793a617eb422.jpg)
 
